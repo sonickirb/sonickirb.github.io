@@ -1,10 +1,14 @@
 
-h1, p, ul, li {
+h1, p, ul, li, a {
+    --marginB: 0px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    margin-bottom: var(--marginB);
     padding: 0;
+    font-size: var(--font-size);
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-weight: bold;
     text-align: center;
@@ -19,12 +23,27 @@ html, body {
     background-size: cover;
 }
 
+.box {
+    --box-width: 200px;
+    --box-height: 100px;
+    --box-padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    
+    width: var(--box-width);
+    height: var(--box-height);
+    padding: var(--box-padding);
+}
+
 .container {
-    padding: 100px;
+    --padding: 100px;
+    --height: 100vh;
+    padding: var(--padding);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: var(--height);
 }
 
 

@@ -43,7 +43,45 @@
             <span style="--i:20;">e</span>
             <span style="--i:21;">!</span>
         </div>
-        <p class="center-text" style="color: white;">im Sonickirb, my hobby is making games!</p>
-        <p class="container"></p>
+        <br>
+        <p class="center-text" style="color: white; --font-size:40px;" font-size=40px>About</p>
+        <div class="container" padding=5px height=50vh>
+            <div class="box" box-width=400px box-height=200px box-padding=20px>
+                <p class="center-text" style="color: white;">im Sonickirb, my hobby is making games!</p>
+                <br>
+                <p class="center-text" style="color: white;">i know how to use Unity, but i mainly develop in Roblox!</p>
+                <br>
+                <a class="center-text" style="color: white;" href="https://patreon.com/Sonickirb?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink">support me on patreon!</a>
+                <br>
+                <p class="center-text" style="color: white;">my games should be below!</p>
+            </div>
+        </div>
+        <br>
+        <p class="center-text" style="color: white; --font-size:40px;" font-size=40px>My Games</p>
+        <div class="container" padding=5px height=120vh>
+            <div class="box" box-width=500px box-height=550px box-padding=20px>
+                <p class="center-text" style="color: white; --font-size:40px;" font-size=40px>Blockhead</p>
+                <p class="center-text" style="color: white; --font-size:10px;" font-size=40px>(in-development)</p>
+                <br>
+                <header class="banner">
+                    <img src="images/blockheadbanner.webp" alt="Banner Image">
+                </header>
+                <br>
+                <p class="center-text" style="color: white;">Explore worlds, solve puzzles, and collect octahedrons to bring back the sunlight!</p>
+                <br>
+                <a class="center-text" style="color: white;" href="no"></a>
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.box').forEach(box => {
+                box.style.setProperty('--box-width', box.getAttribute('box-width'));
+                box.style.setProperty('--box-height', box.getAttribute('box-height'));
+                box.style.setProperty('--box-padding', box.getAttribute('box-padding'));
+            });
+            document.querySelectorAll('.container').forEach(box => {
+                box.style.setProperty('--padding', box.getAttribute('padding'));
+                box.style.setProperty('--height', box.getAttribute('height'));
+            });
+        </script>
     </body>
 </html>
