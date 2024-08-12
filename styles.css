@@ -15,10 +15,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: url('rotating-cube/frame1.png') no-repeat center center fixed;
+    background: url('images/blockhead.gif') no-repeat center center fixed;
     background-size: cover;
-    animation: rotateCube 2s steps(10) infinite;
-    overflow: auto;
 }
 
 .container {
@@ -27,39 +25,6 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-@keyframes rotateCube {
-    0% { background-image: url('images/bg/0001.png'); }
-    5% { background-image: url('images/bg/0002.png'); }
-    10% { background-image: url('images/bg/0003.png'); }
-    15% { background-image: url('images/bg/0004.png'); }
-    20% { background-image: url('images/bg/0005.png'); }
-    25% { background-image: url('images/bg/0006.png'); }
-    30% { background-image: url('images/bg/0007.png'); }
-    35% { background-image: url('images/bg/0008.png'); }
-    40% { background-image: url('images/bg/0009.png'); }
-    45% { background-image: url('images/bg/0010.png'); }
-    50% { background-image: url('images/bg/0011.png'); }
-    55% { background-image: url('images/bg/0012.png'); }
-    60% { background-image: url('images/bg/0013.png'); }
-    65% { background-image: url('images/bg/0014.png'); }
-    70% { background-image: url('images/bg/0015.png'); }
-    75% { background-image: url('images/bg/0016.png'); }
-    80% { background-image: url('images/bg/0017.png'); }
-    85% { background-image: url('images/bg/0018.png'); }
-    90% { background-image: url('images/bg/0019.png'); }
-    95% { background-image: url('images/bg/0020.png'); }
-    100% { background-image: url('images/bg/0001.png'); }
-}
-
-@keyframes scrollBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
 }
 
 
