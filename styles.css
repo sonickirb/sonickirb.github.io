@@ -50,7 +50,7 @@ html, body {
     85% { background-image: url('images/bg/0018.png'); }
     90% { background-image: url('images/bg/0019.png'); }
     95% { background-image: url('images/bg/0020.png'); }
-    100% { background-image: url('images/bg/0001.png'); } /* Loop back to the start */
+    100% { background-image: url('images/bg/0001.png'); }
 }
 
 @keyframes scrollBackground {
@@ -67,10 +67,10 @@ html, body {
     display: inline-block;
     font-size: 3rem;
     position: relative;
-    letter-spacing: 0.1em; /* Adjust spacing as needed */
-    padding: 0; /* Ensure no extra padding is applied */
-    margin: 0; /* Ensure no extra margin is applied */
-    overflow: hidden; /* Prevent overflow if needed */
+    letter-spacing: 0.1em; 
+    padding: 0; 
+    margin: 0;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@ html, body {
     display: inline-block;
     color: red;
     animation: wave 1.5s ease-in-out infinite, rainbow 5s linear infinite;
-    animation-delay: calc(-0.1s * var(--i)); /* Stagger animation start */
+    animation-delay: calc(-0.1s * var(--i));
     margin: 0 0.025em;
 }
 
